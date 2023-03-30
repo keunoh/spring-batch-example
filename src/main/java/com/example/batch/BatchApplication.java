@@ -10,4 +10,10 @@ public class BatchApplication {
 		System.exit(SpringApplication.exit(SpringApplication.run(BatchApplication.class, args)));
 	}
 
+	/**
+	 * MEMO : 테스트 코드
+	 * @SpringJUnitConfig indicates that the class should use Spring’s JUnit facilities
+	 * @SpringBatchTest injects Spring Batch test utilities (such as the JobLauncherTestUtils
+	 * 	and JobRepositoryTestUtils) in the test context
+	 */
 }

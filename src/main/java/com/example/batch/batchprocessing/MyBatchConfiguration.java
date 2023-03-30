@@ -41,14 +41,14 @@ public class MyBatchConfiguration {
         return new BarWriter();
     }
 
-    @Bean
-    public Job ioSampleJob(JobRepository jobRepository,
-                           Step step2) {
-        return new JobBuilder("ioSampleJob", jobRepository)
-                .incrementer(new RunIdIncrementer())
-                .flow(step2)
-                .end().build();
-    }
+//    @Bean
+//    public Job ioSampleJob(JobRepository jobRepository,
+//                           Step step2) {
+//        return new JobBuilder("ioSampleJob", jobRepository)
+//                .incrementer(new RunIdIncrementer())
+//                .flow(step2)
+//                .end().build();
+//    }
 
 
     @Bean
@@ -60,4 +60,5 @@ public class MyBatchConfiguration {
                 .writer(barWriter())
                 .build();
     }
+
 }
